@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 COMPOSE_VERSION="1.25.0"
-COMPOSE_VERSION="master"
+# COMPOSE_VERSION="master"
 
 yum install -y bash-completion
 
