@@ -3,6 +3,8 @@
 COMPOSE_VERSION="1.25.0"
 COMPOSE_VERSION="master"
 
+yum install -y bash-completion
+
 curl -L https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 
