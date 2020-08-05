@@ -9,6 +9,7 @@ yum --enablerepo=elrepo-kernel install -y kernel-ml
 
 awk -F\' '$1=="menuentry " {print i++ " : " $2}' /etc/grub2.cfg
 grub2-editenv list
+grub2-mkconfig -o /etc/grub2.cfg
 grub2-set-default 0
 
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
